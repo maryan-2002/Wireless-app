@@ -1,0 +1,23 @@
+<resources>
+<string name="app_name">Wireless Calculator</string>
+<string-array name="unit_types">
+    <item>Regular</item>
+    <item>dB</item>
+</string-array>
+<string-array name="modulation_types">
+    <item>BPSK</item>
+    <item>8-PSK</item>
+    <item>16-PSK</item>
+</string-array>
+<string-array name="ber_values">
+    <item>10^-6</item>
+    <item>10^-4</item>
+    <item>10^-2</item>
+</string-array>
+    <string-array name="csma_types">
+        <item>Unslotted Nonpersistent CSMA</item>
+        <item>Slotted Nonpersistent CSMA</item>
+        <item>1-persistent CSMA</item>
+        <item>0.1-persistent CSMA</item>
+    </string-array>
+</resources>

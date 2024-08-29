@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q) Throughput in percent of Multiple Access techniques."
+        android:textSize="18sp"
+        android:textColor="#484545"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/csma_types_spinner"
+            android:layout_width="357dp"
+            android:layout_height="45dp"
+
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/data_rate_input"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:hint="Data Rate"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="#808080"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/data_rate_spinner"
+            android:layout_width="137dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/propagation_delay_input"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:hint="Propagation Delay"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="#808080"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/propagation_delay_spinner"
+            android:layout_width="137dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/frame_size_input"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:hint="Frame Size"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="#808080"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/frame_size_spinner"
+            android:layout_width="137dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/frame_rate_input"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:hint="Frame Rate"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="#808080"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/frame_rate_spinner"
+            android:layout_width="137dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/output_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Output"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Show Output"
+        android:layout_marginRight="8dp" />
+
+</LinearLayout>

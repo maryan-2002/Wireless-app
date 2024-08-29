@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="20dp">
+        <Button
+            android:id="@+id/firstChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The number of bits and rate of the sampler, quantizer, source encoder, channel encoder, and interleaver."
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp" />
+<!--        <View-->
+<!--            android:layout_width="280dp"-->
+<!--            android:layout_height="1.5dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/dashed_line"-->
+<!--            android:layout_marginBottom="8dp" />-->
+
+        <Button
+            android:id="@+id/secondChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The number of bits and rate for resource elements, OFDM symbol, Resource Blocks, and maximum transmission using parallel resource blocks."
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+<!--        <View-->
+<!--            android:layout_width="280dp"-->
+<!--            android:layout_height="1.5dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/dashed_line"-->
+<!--            android:layout_marginBottom="8dp" />-->
+        <Button
+            android:id="@+id/thirdChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power transmitted in a flat environment based on the transmitter and receiver specifications."
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+<!--        <View-->
+<!--            android:layout_width="280dp"-->
+<!--            android:layout_height="1.5dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/dashed_line"-->
+<!--            android:layout_marginBottom="8dp" />-->
+        <Button
+            android:id="@+id/fourthChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Throughput in percent of Multiple Access techniques."
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+<!--        <View-->
+<!--            android:layout_width="280dp"-->
+<!--            android:layout_height="1.5dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/dashed_line"-->
+<!--            android:layout_marginBottom="8dp" />-->
+        <Button
+            android:id="@+id/fifthChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Design of cellular system."
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>

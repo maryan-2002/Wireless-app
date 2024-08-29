@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q) Design of cellular system."
+            android:textSize="18sp"
+            android:textColor="#484545"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/time_slots_per_carrier_input"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:hint="Time slots per carrier"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="#808080"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/city_area_input"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:hint="City area"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="#808080"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/city_area_unit_spinner"
+                android:layout_width="137dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/number_of_subscribers_input"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:hint="Number of subscribers"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="#808080"
+            android:textColor="@color/black" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/number_of_calls_input"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:hint="Number of calls"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="#808080"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/number_of_calls_unit_spinner"
+                android:layout_width="137dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/call_duration_input"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:hint="Call duration"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="#808080"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/call_duration_unit_spinner"
+                android:layout_width="137dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/call_drop_probability_input"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:hint="Call drop probability"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="#808080"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/minimum_SIR_input"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:hint="Minimum SIR"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="#808080"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/minimum_SIR_unit_spinner"
+                android:layout_width="137dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/reference_distance_input"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:hint="Reference distance"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="#808080"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/reference_distance_unit_spinner"
+                android:layout_width="137dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/reference_power_input"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:hint="Reference power"
+                android:inputType="numberSigned"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="#808080"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/reference_power_unit_spinner"
+                android:layout_width="137dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/loss_exponent_input"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:hint="Loss exponent"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="#808080"
+            android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/receiver_sensitivity_input"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:hint="Receiver sensitivity"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="#808080"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/receiver_sensitivity_unit_spinner"
+                android:layout_width="137dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/co_cells_input"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:hint="Co-cells"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="#808080"
+            android:textColor="@color/black" />
+        
+
+        <Spinner
+            android:id="@+id/what_to_calculate_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/output_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Output"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="Show Output" />
+
+
+    </LinearLayout>
+</ScrollView>

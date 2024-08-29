@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q) The number of bits and rate of the sampler, quantizer, source encoder, channel encoder, and interleaver."
+        android:textSize="18sp"
+        android:textColor="#484545"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        />
+
+    <!-- Input fields -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/bandwidth_input"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Enter Bandwidth"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textColorHint="#808080" />
+
+        <Spinner
+            android:id="@+id/bandwidth_spinner"
+            android:layout_width="137dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/bit_depth_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number Of Quantizer Bits"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="#808080"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/source_encoder_compression_rate_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Compression Source Encoder Rate"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="#808080"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/channel_encoder_rate_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Channel Encoder Rate"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="#808080"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/interleaver_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Interleaver (bits)"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="#808080"
+        android:textColor="@color/black" />
+
+
+    <Spinner
+        android:id="@+id/what_to_calculate_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+
+        android:textColor="@color/black"
+        />
+
+    <!-- Output TextView -->
+    <TextView
+        android:id="@+id/output_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Output"
+        android:textSize="18sp"
+        android:textColorHint="#808080"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="center"
+        android:text="Show Output" />
+
+
+
+</LinearLayout>
